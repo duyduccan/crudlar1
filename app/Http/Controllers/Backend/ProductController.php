@@ -9,6 +9,12 @@ use App\Http\Controllers\Controller;
 
 class ProductController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+
+    }
     //
     public function index(){
         $products = DB::table('products')->paginate(4);

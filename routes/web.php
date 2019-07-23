@@ -29,7 +29,7 @@ Route::prefix("admin")->group(function(){
     Route::post('/products','Backend\ProductController@store');
     // sửa bản ghi mới
     Route::post('/products/edit/{id}','Backend\ProductController@update');
-});
+})->middleware('auth');;
 
 Auth::routes();
 

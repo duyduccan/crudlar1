@@ -7,7 +7,7 @@
 @section("content")
     <div class="container">
         <h2>Danh sách sản phẩm</h2>
-        <p><a href="{{url('admin/products/create')}}" class="btn btn-success">Thêm sản phẩm</a></p>
+        <p><a href="{{secure_url('admin/products/create')}}" class="btn btn-success">Thêm sản phẩm</a></p>
         <table class="table">
             <thead>
             <tr>
@@ -26,8 +26,8 @@
                     <td>{{$product->images}}</td>
                     <td>{{$product->description}}</td>
                     <td>
-                       <a href="{{url("admin/products/edit/".$product->id)}}" class="btn btn-primary">Sửa</a>
-                       <a href="{{url("admin/products/delete/".$product->id)}}" class="btn btn-danger">Xóa</a>
+                       <a href="{{secure_url("admin/products/edit/".$product->id)}}" class="btn btn-primary">Sửa</a>
+                       <a href="{{secure_url("admin/products/delete/".$product->id)}}" class="btn btn-danger">Xóa</a>
                     </td>
                 </tr>
             @endforeach

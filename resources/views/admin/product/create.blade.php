@@ -38,7 +38,9 @@
 
             <div class="form-group">
                 <label>Mô tả sản phẩm:</label>
-                <input type="text" class="form-control" name="description">
+                <textarea id="mytextarea" rows="4" cols="50" name="description" >
+
+                </textarea>
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>

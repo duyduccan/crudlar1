@@ -29,7 +29,9 @@
 
             <div class="form-group">
                 <label>Mô tả sản phẩm:</label>
-                <input type="text" class="form-control" name="description" value="{{$product->description}}">
+                <textarea id="mytextarea" rows="4" cols="50" name="description" >
+                    {{$product->description}}
+                </textarea>
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>

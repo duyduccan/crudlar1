@@ -102,7 +102,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script src="js/skycons.js"></script>
     <!--//skycons-icons-->
 
-    <script src='https://cdn.tiny.cloud/1/phrqy4vzqqlfsa98m35w5tjs7y5av4cd4qafyhtdz9mfjb9m/tinymce/5/tinymce.min.js' referrerpolicy="origin"></script>
+    <script src='https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js' referrerpolicy="origin"></script>
     <script>
         tinymce.init({
             selector: '#mytextarea'

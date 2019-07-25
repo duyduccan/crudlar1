@@ -17,7 +17,7 @@
     @endif
 
     <div class="container">
-        <form name="product" method="post" action="{{ url("admin/products") }}">
+        <form name="product" method="post" action="{{ secure_url("admin/products") }}">
 
             {{ csrf_field() }}
 
